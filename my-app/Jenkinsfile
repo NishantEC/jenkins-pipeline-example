@@ -15,7 +15,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                dir("/Users/nishant/Documents/Code") {
+                dir("/Users/nishant/Documents/Code/jenkins-pipeline-example/my-app") {
                 sh 'mvn -B -DskipTests clean package'
                 }
             
